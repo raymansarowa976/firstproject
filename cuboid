@@ -1,0 +1,59 @@
+# firstproject
+public class Cuboid {
+//attributes
+ double l;
+ double w;
+ double h;
+ String color;
+//constructors
+public Cuboid(double n, double m, double p, String s) {
+	setL(n); setW(m); setH(p); setColor(s);
+}
+public Cuboid() {
+	l = 1; w =1; h = 1;
+	color = "White";
+}
+//methods
+    public double getSurfaceArea() {
+	double surfacearea = 2*(l*w + l*h + w*h);
+	return surfacearea;
+}
+    public double getVolume(){
+		double volume = l*w*h;
+		return volume;
+	}
+    public void displayInfo() {
+		System.out.println("Color: " + color);
+		System.out.println("Dimensions: " + l + " X " + w + " X " + h);
+		System.out.println("Surface area: " + getSurfaceArea());
+		System.out.println("Volume: "+ getVolume());
+		
+	}
+
+	//setters and getters
+	public void setL(double n) {
+		l = n;
+	}
+	public void setW(double m) {
+		w = m;
+	}
+	public void setH(double p) {
+		h = p;
+	}
+	public void setColor(String s) {
+		color = s;
+	}
+	public double getL() {
+		return l;
+	}
+	public double GetW() {
+		return w;
+	}
+	public double getH() {
+		return h;
+	}
+	public String getColor() {
+		return color;
+	}
+
+}
